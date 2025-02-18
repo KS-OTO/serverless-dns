@@ -202,7 +202,7 @@ class StrType {
   }
 
   include(s) {
-    return s && s.include(this.filter);
+    return s?.include(this.filter);
   }
 
   len(s) {
