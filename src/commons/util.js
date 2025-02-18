@@ -323,7 +323,7 @@ export function emptyArray(a) {
   if (!a) return true;
   // obj v arr: stackoverflow.com/a/2462810
   if (typeof a !== "object") return false;
-  if (!Object.prototype.hasOwnProperty.call(a, 'length')) return false;
+  if (!Object.prototype.hasOwnProperty.call(a, "length")) return false;
   // len(a) === 0 is empty
   return a.length <= 0;
 }
