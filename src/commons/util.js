@@ -266,7 +266,7 @@ export function vmid() {
 }
 
 export function isDohGetRequest(queryString) {
-  return queryString && queryString.has("dns");
+  return queryString?.has("dns");
 }
 
 /**
