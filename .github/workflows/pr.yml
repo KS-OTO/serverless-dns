@@ -104,4 +104,3 @@ jobs:
           PR_HEAD_REF: ${{ env.PR_HEAD_REF }}
         run: |
           git remote add fork ${{ env.PR_HEAD_REPO }}
-          git push fork HEAD:$PR_HEAD_REF
