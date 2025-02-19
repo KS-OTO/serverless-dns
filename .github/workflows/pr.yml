@@ -91,7 +91,6 @@ jobs:
         env:
           PR_HEAD_REF: ${{ env.PR_HEAD_REF }}
         run: |
-          git push origin HEAD:"$PR_HEAD_REF"
 
       # `GITHUB_TOKEN` owned by `github-actions[bot]` has write access to
       # origin in this `PR-target` workflow but not the write access to fork
@@ -104,4 +103,3 @@ jobs:
           PR_HEAD_REF: ${{ env.PR_HEAD_REF }}
         run: |
           git remote add fork ${{ env.PR_HEAD_REPO }}
-          git push fork HEAD:"$PR_HEAD_REF"
