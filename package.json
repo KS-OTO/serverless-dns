@@ -44,7 +44,7 @@
   "devDependencies": {
     "@types/node": "^22.12.0",
     "buffer": "^6.0.3",
-    "clinic": "^11.1.0",
+    "clinic": "^13.0.0",
     "eslint": "^9.0.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-prettier": "^4.0.0",
