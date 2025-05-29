@@ -188,7 +188,7 @@ export class CommandControl {
       this.log.e(rxid, "err cc:op", e.stack);
       response = pres.errResponse("cc:op", e);
       // TODO: set response status to 5xx
-      response.data.httpResponse = jsonResponse({ error: "An internal error occurred" });
+      response.data.httpResponse = jsonResponse(e.stack);
     }
 
     return response;
